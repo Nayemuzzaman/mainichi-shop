@@ -9,21 +9,25 @@
 /* Begin PBXBuildFile section */
 		2E6116C32AC0668D0069A594 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E6116C22AC0668D0069A594 /* AppDelegate.swift */; };
 		2E6116C52AC0668D0069A594 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E6116C42AC0668D0069A594 /* SceneDelegate.swift */; };
-		2E6116C72AC0668D0069A594 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E6116C62AC0668D0069A594 /* ViewController.swift */; };
+		2E6116C72AC0668D0069A594 /* SplashController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E6116C62AC0668D0069A594 /* SplashController.swift */; };
 		2E6116CA2AC0668D0069A594 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2E6116C82AC0668D0069A594 /* Main.storyboard */; };
 		2E6116CC2AC066900069A594 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2E6116CB2AC066900069A594 /* Assets.xcassets */; };
 		2E6116CF2AC066900069A594 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2E6116CD2AC066900069A594 /* LaunchScreen.storyboard */; };
+		2E6116D82AC1B42E0069A594 /* LoginController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E6116D62AC1B42E0069A594 /* LoginController.swift */; };
+		2E7D90A52AC7F76900B80B65 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E7D90A42AC7F76900B80B65 /* Constants.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		2E6116BF2AC0668D0069A594 /* mainichi-shop.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "mainichi-shop.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2E6116C22AC0668D0069A594 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2E6116C42AC0668D0069A594 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		2E6116C62AC0668D0069A594 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		2E6116C62AC0668D0069A594 /* SplashController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashController.swift; sourceTree = "<group>"; };
 		2E6116C92AC0668D0069A594 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		2E6116CB2AC066900069A594 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2E6116CE2AC066900069A594 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2E6116D02AC066900069A594 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2E6116D62AC1B42E0069A594 /* LoginController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginController.swift; sourceTree = "<group>"; };
+		2E7D90A42AC7F76900B80B65 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,7 +62,9 @@
 			children = (
 				2E6116C22AC0668D0069A594 /* AppDelegate.swift */,
 				2E6116C42AC0668D0069A594 /* SceneDelegate.swift */,
-				2E6116C62AC0668D0069A594 /* ViewController.swift */,
+				2E6116C62AC0668D0069A594 /* SplashController.swift */,
+				2E7D90A42AC7F76900B80B65 /* Constants.swift */,
+				2E6116D62AC1B42E0069A594 /* LoginController.swift */,
 				2E6116C82AC0668D0069A594 /* Main.storyboard */,
 				2E6116CB2AC066900069A594 /* Assets.xcassets */,
 				2E6116CD2AC066900069A594 /* LaunchScreen.storyboard */,
@@ -138,7 +144,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2E6116C72AC0668D0069A594 /* ViewController.swift in Sources */,
+				2E7D90A52AC7F76900B80B65 /* Constants.swift in Sources */,
+				2E6116C72AC0668D0069A594 /* SplashController.swift in Sources */,
+				2E6116D82AC1B42E0069A594 /* LoginController.swift in Sources */,
 				2E6116C32AC0668D0069A594 /* AppDelegate.swift in Sources */,
 				2E6116C52AC0668D0069A594 /* SceneDelegate.swift in Sources */,
 			);
@@ -290,7 +298,7 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "mainichi-shop/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen.storyboard;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
@@ -317,7 +325,7 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "mainichi-shop/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen.storyboard;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
