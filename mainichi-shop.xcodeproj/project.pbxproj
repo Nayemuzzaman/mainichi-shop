@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2DB4C5AB75D35E4ABB52D841 /* Pods_mainichi_shop.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 685DD35AB3352A3940ED7FAC /* Pods_mainichi_shop.framework */; };
 		2E6116C32AC0668D0069A594 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E6116C22AC0668D0069A594 /* AppDelegate.swift */; };
 		2E6116C52AC0668D0069A594 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E6116C42AC0668D0069A594 /* SceneDelegate.swift */; };
 		2E6116C72AC0668D0069A594 /* SplashController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E6116C62AC0668D0069A594 /* SplashController.swift */; };
@@ -15,9 +16,11 @@
 		2E6116CF2AC066900069A594 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2E6116CD2AC066900069A594 /* LaunchScreen.storyboard */; };
 		2E6116D82AC1B42E0069A594 /* LoginController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E6116D62AC1B42E0069A594 /* LoginController.swift */; };
 		2E7D90A52AC7F76900B80B65 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E7D90A42AC7F76900B80B65 /* Constants.swift */; };
+		2E7D90AF2AC954E200B80B65 /* UIViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E7D90AE2AC954E200B80B65 /* UIViewExtension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0A72EAC74500004B823019FB /* Pods-mainichi-shop.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-mainichi-shop.debug.xcconfig"; path = "Target Support Files/Pods-mainichi-shop/Pods-mainichi-shop.debug.xcconfig"; sourceTree = "<group>"; };
 		2E6116BF2AC0668D0069A594 /* mainichi-shop.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "mainichi-shop.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2E6116C22AC0668D0069A594 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2E6116C42AC0668D0069A594 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -28,6 +31,9 @@
 		2E6116D02AC066900069A594 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2E6116D62AC1B42E0069A594 /* LoginController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginController.swift; sourceTree = "<group>"; };
 		2E7D90A42AC7F76900B80B65 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		2E7D90AE2AC954E200B80B65 /* UIViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewExtension.swift; sourceTree = "<group>"; };
+		685DD35AB3352A3940ED7FAC /* Pods_mainichi_shop.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_mainichi_shop.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D902813020CB60452EF1D568 /* Pods-mainichi-shop.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-mainichi-shop.release.xcconfig"; path = "Target Support Files/Pods-mainichi-shop/Pods-mainichi-shop.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -35,6 +41,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2DB4C5AB75D35E4ABB52D841 /* Pods_mainichi_shop.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -46,6 +53,8 @@
 			children = (
 				2E6116C12AC0668D0069A594 /* mainichi-shop */,
 				2E6116C02AC0668D0069A594 /* Products */,
+				385A4588DF30BC423542667F /* Pods */,
+				9154EF2BF4E7DFFCFAFF9C08 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -60,17 +69,99 @@
 		2E6116C12AC0668D0069A594 /* mainichi-shop */ = {
 			isa = PBXGroup;
 			children = (
-				2E6116C22AC0668D0069A594 /* AppDelegate.swift */,
-				2E6116C42AC0668D0069A594 /* SceneDelegate.swift */,
-				2E6116C62AC0668D0069A594 /* SplashController.swift */,
-				2E7D90A42AC7F76900B80B65 /* Constants.swift */,
-				2E6116D62AC1B42E0069A594 /* LoginController.swift */,
-				2E6116C82AC0668D0069A594 /* Main.storyboard */,
+				2E7D90AD2AC954B800B80B65 /* Extensions */,
+				2E7D90AC2AC81A7A00B80B65 /* ViewModels */,
+				2E7D90AB2AC81A6F00B80B65 /* Services */,
+				2E7D90AA2AC81A4500B80B65 /* CustomViews */,
+				2E7D90A92AC81A3000B80B65 /* Utils */,
+				2E7D90A82AC819F800B80B65 /* Storyboards */,
+				2E7D90A72AC819B700B80B65 /* ViewControllers */,
+				2E7D90A62AC8196C00B80B65 /* AppDelegate */,
 				2E6116CB2AC066900069A594 /* Assets.xcassets */,
-				2E6116CD2AC066900069A594 /* LaunchScreen.storyboard */,
 				2E6116D02AC066900069A594 /* Info.plist */,
 			);
 			path = "mainichi-shop";
+			sourceTree = "<group>";
+		};
+		2E7D90A62AC8196C00B80B65 /* AppDelegate */ = {
+			isa = PBXGroup;
+			children = (
+				2E6116C22AC0668D0069A594 /* AppDelegate.swift */,
+				2E6116C42AC0668D0069A594 /* SceneDelegate.swift */,
+			);
+			path = AppDelegate;
+			sourceTree = "<group>";
+		};
+		2E7D90A72AC819B700B80B65 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				2E6116C62AC0668D0069A594 /* SplashController.swift */,
+				2E6116D62AC1B42E0069A594 /* LoginController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		2E7D90A82AC819F800B80B65 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				2E6116C82AC0668D0069A594 /* Main.storyboard */,
+				2E6116CD2AC066900069A594 /* LaunchScreen.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		2E7D90A92AC81A3000B80B65 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				2E7D90A42AC7F76900B80B65 /* Constants.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		2E7D90AA2AC81A4500B80B65 /* CustomViews */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = CustomViews;
+			sourceTree = "<group>";
+		};
+		2E7D90AB2AC81A6F00B80B65 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		2E7D90AC2AC81A7A00B80B65 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		2E7D90AD2AC954B800B80B65 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				2E7D90AE2AC954E200B80B65 /* UIViewExtension.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		385A4588DF30BC423542667F /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				0A72EAC74500004B823019FB /* Pods-mainichi-shop.debug.xcconfig */,
+				D902813020CB60452EF1D568 /* Pods-mainichi-shop.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		9154EF2BF4E7DFFCFAFF9C08 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				685DD35AB3352A3940ED7FAC /* Pods_mainichi_shop.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -80,9 +171,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 2E6116D32AC066900069A594 /* Build configuration list for PBXNativeTarget "mainichi-shop" */;
 			buildPhases = (
+				3A2E468300794795D9A4559D /* [CP] Check Pods Manifest.lock */,
 				2E6116BB2AC0668D0069A594 /* Sources */,
 				2E6116BC2AC0668D0069A594 /* Frameworks */,
 				2E6116BD2AC0668D0069A594 /* Resources */,
+				6571716D13B3B56F1EE8AC3C /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -139,11 +232,54 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		3A2E468300794795D9A4559D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-mainichi-shop-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6571716D13B3B56F1EE8AC3C /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-mainichi-shop/Pods-mainichi-shop-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-mainichi-shop/Pods-mainichi-shop-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-mainichi-shop/Pods-mainichi-shop-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		2E6116BB2AC0668D0069A594 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2E7D90AF2AC954E200B80B65 /* UIViewExtension.swift in Sources */,
 				2E7D90A52AC7F76900B80B65 /* Constants.swift in Sources */,
 				2E6116C72AC0668D0069A594 /* SplashController.swift in Sources */,
 				2E6116D82AC1B42E0069A594 /* LoginController.swift in Sources */,
@@ -290,6 +426,7 @@
 		};
 		2E6116D42AC066900069A594 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0A72EAC74500004B823019FB /* Pods-mainichi-shop.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -317,6 +454,7 @@
 		};
 		2E6116D52AC066900069A594 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D902813020CB60452EF1D568 /* Pods-mainichi-shop.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;

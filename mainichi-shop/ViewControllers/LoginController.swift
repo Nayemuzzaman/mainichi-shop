@@ -8,11 +8,21 @@
 import UIKit
 
 class LoginController: UIViewController {
+    
+    @IBOutlet weak var logoImageView: UIImageView!
+    
+    @IBOutlet weak var usernameField: UITextField!
+    @IBOutlet weak var passwordFeild: UITextField!
+    @IBOutlet weak var loginButton: UIButton!
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        let borderColor = UIColor(named: "theme200") ?? UIColor.systemCyan
+        self.logoImageView.applyCorner(cornerRadius: 15.0, borderWidth: 1.0, borderColor: borderColor)
+        
+        self.passwordFeild.becomeFirstResponder()
 
-        // Do any additional setup after loading the view.
     }
 
 
