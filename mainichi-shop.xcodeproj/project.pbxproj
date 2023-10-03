@@ -8,6 +8,12 @@
 
 /* Begin PBXBuildFile section */
 		2DB4C5AB75D35E4ABB52D841 /* Pods_mainichi_shop.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 685DD35AB3352A3940ED7FAC /* Pods_mainichi_shop.framework */; };
+		2E43248B2ACA8C3900843BC6 /* SignupController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E43248A2ACA8C3900843BC6 /* SignupController.swift */; };
+		2E43248D2ACAED5200843BC6 /* CategoryController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E43248C2ACAED5200843BC6 /* CategoryController.swift */; };
+		2E43248F2ACAED6900843BC6 /* SearchController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E43248E2ACAED6900843BC6 /* SearchController.swift */; };
+		2E4324912ACAEDC100843BC6 /* OrdersController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E4324902ACAEDC100843BC6 /* OrdersController.swift */; };
+		2E4324932ACAEDF100843BC6 /* SettingsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E4324922ACAEDF100843BC6 /* SettingsController.swift */; };
+		2E4324952ACAF6F200843BC6 /* ProductsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E4324942ACAF6F100843BC6 /* ProductsController.swift */; };
 		2E6116C32AC0668D0069A594 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E6116C22AC0668D0069A594 /* AppDelegate.swift */; };
 		2E6116C52AC0668D0069A594 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E6116C42AC0668D0069A594 /* SceneDelegate.swift */; };
 		2E6116C72AC0668D0069A594 /* SplashController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E6116C62AC0668D0069A594 /* SplashController.swift */; };
@@ -21,6 +27,12 @@
 
 /* Begin PBXFileReference section */
 		0A72EAC74500004B823019FB /* Pods-mainichi-shop.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-mainichi-shop.debug.xcconfig"; path = "Target Support Files/Pods-mainichi-shop/Pods-mainichi-shop.debug.xcconfig"; sourceTree = "<group>"; };
+		2E43248A2ACA8C3900843BC6 /* SignupController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupController.swift; sourceTree = "<group>"; };
+		2E43248C2ACAED5200843BC6 /* CategoryController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryController.swift; sourceTree = "<group>"; };
+		2E43248E2ACAED6900843BC6 /* SearchController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchController.swift; sourceTree = "<group>"; };
+		2E4324902ACAEDC100843BC6 /* OrdersController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrdersController.swift; sourceTree = "<group>"; };
+		2E4324922ACAEDF100843BC6 /* SettingsController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsController.swift; sourceTree = "<group>"; };
+		2E4324942ACAF6F100843BC6 /* ProductsController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductsController.swift; sourceTree = "<group>"; };
 		2E6116BF2AC0668D0069A594 /* mainichi-shop.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "mainichi-shop.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2E6116C22AC0668D0069A594 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2E6116C42AC0668D0069A594 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -97,6 +109,12 @@
 			children = (
 				2E6116C62AC0668D0069A594 /* SplashController.swift */,
 				2E6116D62AC1B42E0069A594 /* LoginController.swift */,
+				2E43248A2ACA8C3900843BC6 /* SignupController.swift */,
+				2E43248C2ACAED5200843BC6 /* CategoryController.swift */,
+				2E43248E2ACAED6900843BC6 /* SearchController.swift */,
+				2E4324902ACAEDC100843BC6 /* OrdersController.swift */,
+				2E4324922ACAEDF100843BC6 /* SettingsController.swift */,
+				2E4324942ACAF6F100843BC6 /* ProductsController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -279,12 +297,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2E4324912ACAEDC100843BC6 /* OrdersController.swift in Sources */,
 				2E7D90AF2AC954E200B80B65 /* UIViewExtension.swift in Sources */,
 				2E7D90A52AC7F76900B80B65 /* Constants.swift in Sources */,
+				2E43248B2ACA8C3900843BC6 /* SignupController.swift in Sources */,
 				2E6116C72AC0668D0069A594 /* SplashController.swift in Sources */,
+				2E4324932ACAEDF100843BC6 /* SettingsController.swift in Sources */,
 				2E6116D82AC1B42E0069A594 /* LoginController.swift in Sources */,
+				2E43248D2ACAED5200843BC6 /* CategoryController.swift in Sources */,
 				2E6116C32AC0668D0069A594 /* AppDelegate.swift in Sources */,
+				2E43248F2ACAED6900843BC6 /* SearchController.swift in Sources */,
 				2E6116C52AC0668D0069A594 /* SceneDelegate.swift in Sources */,
+				2E4324952ACAF6F200843BC6 /* ProductsController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

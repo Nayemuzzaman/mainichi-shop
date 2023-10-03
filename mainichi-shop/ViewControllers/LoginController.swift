@@ -22,25 +22,41 @@ class LoginController: UIViewController {
         self.logoImageView.applyCorner(cornerRadius: 15.0, borderWidth: 1.0, borderColor: borderColor)
         
         self.passwordFeild.becomeFirstResponder()
+        
+        self.title = "Login"
 
     }
-
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
     
     @IBAction func onClickLoginButton() {
-        let alertController = UIAlertController(title: "Click Event", message: "Login button clicked", preferredStyle: .alert)
-        let closeAction = UIAlertAction(title: "close", style: .cancel)
-        alertController.addAction(closeAction)
-        self.present(alertController, animated: true)
+        self.login()
+        
+        if let currentWindowScene = UIApplication.shared.connectedScenes.first as? UIWindowScene {
+            //sceneDelegate
+            if let sceneDelegate = currentWindowScene.delegate as? SceneDelegate, let window = sceneDelegate.window {
+                //print(window.rootViewController)
+                
+               if let tabController = self.storyboard?.instantiateViewController(withIdentifier: Constants.tabController) as? UITabBarController     {
+                    window.rootViewController = tabController
+                }
+            }
+        }
+        
     }
+    
+    func login() {
+        
+    }
+    
+    @IBAction func onClickSignUpButton() {
+        if let signupController = self.storyboard?.instantiateViewController(withIdentifier: Constants.signupController) as? SignupController {
+            self.navigationController?.pushViewController(signupController, animated: true)
+        }
+    }
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if let signupController = segue.destination as? SignupController {
+            signupController.value = 2
+        }
+    }
+    
 
 }

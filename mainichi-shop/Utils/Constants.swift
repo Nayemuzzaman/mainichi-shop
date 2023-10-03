@@ -9,4 +9,7 @@ import Foundation
 
 class Constants {
     public static let loginController = "LoginController"
+    public static let authNavigationController = "AuthNavigationController"
+    public static let signupController = "SignupController"
+    public static let tabController = "tabController"
 }
