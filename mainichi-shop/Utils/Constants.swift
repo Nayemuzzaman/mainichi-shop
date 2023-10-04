@@ -12,4 +12,5 @@ class Constants {
     public static let authNavigationController = "AuthNavigationController"
     public static let signupController = "SignupController"
     public static let tabController = "tabController"
+    public static let profileController = "ProfileController"
 }
