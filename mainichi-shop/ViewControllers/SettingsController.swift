@@ -52,7 +52,7 @@ extension SettingsController: UITableViewDataSource, UITableViewDelegate {
         
         if indexPath.row == 0 {
             if let profileController = self.storyboard?.instantiateViewController(withIdentifier: Constants.profileController) as? ProfileController {
-                self.navigationController?.pushViewController(profileController, animated: true)
+                self.navigationController?.pushViewController(profileController, animated: false)
             }
         }
 

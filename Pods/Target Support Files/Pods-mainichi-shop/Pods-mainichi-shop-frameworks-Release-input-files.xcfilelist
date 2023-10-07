@@ -1,2 +1,3 @@
 ${PODS_ROOT}/Target Support Files/Pods-mainichi-shop/Pods-mainichi-shop-frameworks.sh
+${BUILT_PRODUCTS_DIR}/ActionKit/ActionKit.framework
 ${BUILT_PRODUCTS_DIR}/IQKeyboardManagerSwift/IQKeyboardManagerSwift.framework
