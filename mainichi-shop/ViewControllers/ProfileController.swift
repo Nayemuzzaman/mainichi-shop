@@ -29,6 +29,18 @@ class ProfileController: UIViewController {
                 self.notifyLabel.text = "Don't Notify Me when order processed"
             }
         }
+        let singleTapGestureRecognizer = UITapGestureRecognizer(){
+            self.view.backgroundColor = self.getRandomColor()
+        }
+        self.notifyLabel.isUserInteractionEnabled = true
+        self.notifyLabel.addGestureRecognizer(singleTapGestureRecognizer)
 
+    }
+    func getRandomColor () -> UIColor {
+        return UIColor(red: randomNumber(), green: randomNumber(), blue: randomNumber(), alpha: randomNumber())
+    }
+    
+    func randomNumber() -> Double {
+        return Double(arc4random() % 255) / 255.0
     }
 }
