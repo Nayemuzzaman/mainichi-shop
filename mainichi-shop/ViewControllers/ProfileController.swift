@@ -13,6 +13,10 @@ class ProfileController: UIViewController {
     @IBOutlet weak var profilePhotoImageView: UIImageView!
     @IBOutlet weak var notifySwitch: UISwitch!
     @IBOutlet weak var notifyLabel: UILabel!
+    
+    @IBOutlet weak var nameLabel: UILabel!
+    @IBOutlet weak var bioLabel: UILabel!
+    
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -34,6 +38,9 @@ class ProfileController: UIViewController {
         }
         self.notifyLabel.isUserInteractionEnabled = true
         self.notifyLabel.addGestureRecognizer(singleTapGestureRecognizer)
+        
+        self.nameLabel.text = "Alī ibn Abī Ṭālib"
+        self.bioLabel.text = "Ali was a cousin of Muhammad. He was raised by Mohammed from the age of 5 and accepted Mohammed's claim of divine revelation by age 11, being among the first to do so. Ali played a pivotal role in the early years of Islam while Muhammad was in Mecca and under severe persecution. After Muhammad's relocation to Medina in 622, Ali married his daughter Fatima, becoming Mohammed's son-in-law. Ali fathered, among others, Hasan and Husayn, the second and third Shia Imams."
 
     }
     func getRandomColor () -> UIColor {

@@ -14,3 +14,8 @@ class Constants {
     public static let tabController = "tabController"
     public static let profileController = "ProfileController"
 }
+
+class CellIdentifier {
+    public static let searchCell = "SearchCell"
+    
+}
