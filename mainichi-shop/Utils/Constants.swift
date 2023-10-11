@@ -17,5 +17,6 @@ class Constants {
 
 class CellIdentifier {
     public static let searchCell = "SearchCell"
+    public static let prouctCell = "ProductCell"
     
 }

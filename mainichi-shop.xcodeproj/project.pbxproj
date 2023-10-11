@@ -18,6 +18,9 @@
 		2E43249A2AD3D20F00843BC6 /* Product.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E4324992AD3D20F00843BC6 /* Product.swift */; };
 		2E43249D2AD3DA3A00843BC6 /* SearchCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E43249B2AD3DA3A00843BC6 /* SearchCell.swift */; };
 		2E43249E2AD3DA3A00843BC6 /* SearchCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2E43249C2AD3DA3A00843BC6 /* SearchCell.xib */; };
+		2E4324A12AD59CD700843BC6 /* ProductCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E43249F2AD59CD700843BC6 /* ProductCell.swift */; };
+		2E4324A22AD59CD700843BC6 /* ProductCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2E4324A02AD59CD700843BC6 /* ProductCell.xib */; };
+		2E4324A42AD5A3C800843BC6 /* DisplayProduct.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E4324A32AD5A3C800843BC6 /* DisplayProduct.swift */; };
 		2E6116C32AC0668D0069A594 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E6116C22AC0668D0069A594 /* AppDelegate.swift */; };
 		2E6116C52AC0668D0069A594 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E6116C42AC0668D0069A594 /* SceneDelegate.swift */; };
 		2E6116C72AC0668D0069A594 /* SplashController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E6116C62AC0668D0069A594 /* SplashController.swift */; };
@@ -41,6 +44,9 @@
 		2E4324992AD3D20F00843BC6 /* Product.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Product.swift; sourceTree = "<group>"; };
 		2E43249B2AD3DA3A00843BC6 /* SearchCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchCell.swift; sourceTree = "<group>"; };
 		2E43249C2AD3DA3A00843BC6 /* SearchCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SearchCell.xib; sourceTree = "<group>"; };
+		2E43249F2AD59CD700843BC6 /* ProductCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductCell.swift; sourceTree = "<group>"; };
+		2E4324A02AD59CD700843BC6 /* ProductCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ProductCell.xib; sourceTree = "<group>"; };
+		2E4324A32AD5A3C800843BC6 /* DisplayProduct.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DisplayProduct.swift; sourceTree = "<group>"; };
 		2E6116BF2AC0668D0069A594 /* mainichi-shop.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "mainichi-shop.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2E6116C22AC0668D0069A594 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2E6116C42AC0668D0069A594 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -72,6 +78,7 @@
 			isa = PBXGroup;
 			children = (
 				2E4324992AD3D20F00843BC6 /* Product.swift */,
+				2E4324A32AD5A3C800843BC6 /* DisplayProduct.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -159,6 +166,8 @@
 			children = (
 				2E43249B2AD3DA3A00843BC6 /* SearchCell.swift */,
 				2E43249C2AD3DA3A00843BC6 /* SearchCell.xib */,
+				2E43249F2AD59CD700843BC6 /* ProductCell.swift */,
+				2E4324A02AD59CD700843BC6 /* ProductCell.xib */,
 			);
 			path = CustomViews;
 			sourceTree = "<group>";
@@ -264,6 +273,7 @@
 			files = (
 				2E6116CF2AC066900069A594 /* LaunchScreen.storyboard in Resources */,
 				2E43249E2AD3DA3A00843BC6 /* SearchCell.xib in Resources */,
+				2E4324A22AD59CD700843BC6 /* ProductCell.xib in Resources */,
 				2E6116CC2AC066900069A594 /* Assets.xcassets in Resources */,
 				2E6116CA2AC0668D0069A594 /* Main.storyboard in Resources */,
 			);
@@ -325,12 +335,14 @@
 				2E43248B2ACA8C3900843BC6 /* SignupController.swift in Sources */,
 				2E6116C72AC0668D0069A594 /* SplashController.swift in Sources */,
 				2E4324972ACC534900843BC6 /* ProfileController.swift in Sources */,
+				2E4324A42AD5A3C800843BC6 /* DisplayProduct.swift in Sources */,
 				2E4324932ACAEDF100843BC6 /* SettingsController.swift in Sources */,
 				2E6116D82AC1B42E0069A594 /* LoginController.swift in Sources */,
 				2E43248D2ACAED5200843BC6 /* CategoryController.swift in Sources */,
 				2E6116C32AC0668D0069A594 /* AppDelegate.swift in Sources */,
 				2E43248F2ACAED6900843BC6 /* SearchController.swift in Sources */,
 				2E6116C52AC0668D0069A594 /* SceneDelegate.swift in Sources */,
+				2E4324A12AD59CD700843BC6 /* ProductCell.swift in Sources */,
 				2E4324952ACAF6F200843BC6 /* ProductsController.swift in Sources */,
 				2E43249A2AD3D20F00843BC6 /* Product.swift in Sources */,
 			);
