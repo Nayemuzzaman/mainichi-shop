@@ -34,6 +34,12 @@ class CategoryController: UIViewController {
         let productNib = UINib(nibName: CellIdentifier.prouctCell, bundle: nil)
         
         self.mCollectionView.register(productNib, forCellWithReuseIdentifier: CellIdentifier.prouctCell)
+        
+        let categoryHolderNib = UINib(nibName: CellIdentifier.CategoryHolderCell, bundle: nil)
+        self.mCollectionView.register(categoryHolderNib, forCellWithReuseIdentifier: CellIdentifier.CategoryHolderCell)
+        
+        let sectionHeaderNib = UINib(nibName: CellIdentifier.collectionSectionHeaderView, bundle: nil)
+        self.mCollectionView.register(sectionHeaderNib, forSupplementaryViewOfKind: UICollectionView.elementKindSectionHeader, withReuseIdentifier: CellIdentifier.collectionSectionHeaderView)
     }
 
 }
@@ -43,7 +49,7 @@ extension CategoryController: UICollectionViewDataSource{
     }
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         if section == 0{
-            return 0
+            return 1
         } else {
             return self.products.count
         }
@@ -54,7 +60,8 @@ extension CategoryController: UICollectionViewDataSource{
         let row = indexPath.row
         
         if section == 0 {
-            return UICollectionViewCell(frame: .zero)
+            let categoryHolderCell = collectionView.dequeueReusableCell(withReuseIdentifier: CellIdentifier.CategoryHolderCell, for: indexPath) as! CategoryHolderCell
+            return categoryHolderCell
         }else {
             let cell = collectionView.dequeueReusableCell(withReuseIdentifier: CellIdentifier.prouctCell, for: indexPath) as! ProductCell
             let product = self.products[row]
@@ -69,12 +76,31 @@ extension CategoryController: UICollectionViewDelegate{
 }
 extension CategoryController: UICollectionViewDelegateFlowLayout{
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
+        let section = indexPath.section
+        if(section == 0){
+            return CGSize(width: self.view.frame.width, height: 120.0)
+        }
         return sizeForItem()
         
     }
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, insetForSectionAt section: Int) -> UIEdgeInsets {
         return UIEdgeInsets(top: 0.0, left: 10.0, bottom: 10.0, right: 10.0)
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, viewForSupplementaryElementOfKind kind: String, at indexPath: IndexPath) -> UICollectionReusableView {
+        
+        let header = mCollectionView.dequeueReusableSupplementaryView(ofKind: UICollectionView.elementKindSectionHeader, withReuseIdentifier: CellIdentifier.collectionSectionHeaderView, for: indexPath) as! CollectionSectionHeaderView
+        if indexPath.section == 0 {
+            header.headerTitleLabel.text = "Product Categories"
+        } else {
+            header.headerTitleLabel.text = "Popular Products"
+        }
+        return header
+        
+    }
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, referenceSizeForHeaderInSection section: Int) -> CGSize {
+        return CGSize(width: self.view.frame.width, height: 50.0)
     }
 }
 
