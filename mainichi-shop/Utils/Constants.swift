@@ -25,4 +25,5 @@ class CellIdentifier {
 class RestClient {
     public static let baseUrl = "https://api.escuelajs.co"
     public static let categoryUrl = "/api/v1/categories"
+    public static let loginURL = "/api/v1/auth/login"
 }

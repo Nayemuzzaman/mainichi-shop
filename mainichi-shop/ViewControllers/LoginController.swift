@@ -6,6 +6,8 @@
 //
 
 import UIKit
+import Alamofire
+import MBProgressHUD
 
 class LoginController: UIViewController {
     
@@ -28,8 +30,56 @@ class LoginController: UIViewController {
     }
     
     @IBAction func onClickLoginButton() {
-        self.login()
         
+        if self.validateLoginInfo() {
+            let email = self.usernameField.text!
+            let password = self.passwordFeild.text!
+            self.login(email: email, password: password)
+        }
+        
+    }
+    func validateLoginInfo () -> Bool {
+        guard let email = self.usernameField.text, email.isValidEmail() else {
+            self.displayAlert(title: "Email invalid", message: "Please enter valid email" )
+            return false
+        }
+        guard let password = self.passwordFeild.text, password.isValidPassword() else {
+            self.displayAlert(title: "Password too short", message: "password at least 6 character long" )
+            return false
+        }
+        return true
+    }
+    
+    func login( email: String,  password: String) {
+        let url = RestClient.baseUrl + RestClient.loginURL
+        let loginRequest = LoginRequest(email: email, password: password)
+        let headers: HTTPHeaders = [
+            "Content-Type": "application/json"
+        ]
+        
+        MBProgressHUD.showAdded(to: self.view, animated: true)
+        AF.request(url, method: .post, parameters: loginRequest, encoder: JSONParameterEncoder.default, headers: headers, interceptor: nil, requestModifier: nil).responseDecodable(of: LoginResponse.self) {
+            response in
+            MBProgressHUD.hide(for: self.view, animated: true)
+            
+            switch (response.result){
+                case .success:
+                    print(response)
+                if let responseData = response.value {
+                    if let accessToken = responseData.access_token {
+                        self.navigate()
+                    } else if let statusCode = responseData.statusCode, let message = responseData.message{
+                        self.displayAlert(title: "Login Failed", message: message)
+                    }
+                }
+                case let .failure(error):
+                    print(error)
+                
+            }
+        }
+    }
+    
+    func navigate() {
         if let currentWindowScene = UIApplication.shared.connectedScenes.first as? UIWindowScene {
             //sceneDelegate
             if let sceneDelegate = currentWindowScene.delegate as? SceneDelegate, let window = sceneDelegate.window {
@@ -40,11 +90,6 @@ class LoginController: UIViewController {
                 }
             }
         }
-        
-    }
-    
-    func login() {
-        
     }
     
     @IBAction func onClickSignUpButton() {

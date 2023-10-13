@@ -66,7 +66,7 @@
                                 <color key="textColor" name="theme900"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Username" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="D0M-Lr-Vt6">
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="D0M-Lr-Vt6">
                                 <rect key="frame" x="71.666666666666686" y="406" width="250" height="34"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="250" id="rD2-O0-nxj"/>
