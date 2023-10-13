@@ -50,7 +50,7 @@
             </constraints>
             <size key="customSize" width="256" height="110"/>
             <connections>
-                <outlet property="categoryCollectionView" destination="5kG-Gr-PV8" id="mht-nN-ju9"/>
+                <outlet property="categoryCollectionView" destination="5kG-Gr-PV8" id="YOp-X5-OiA"/>
             </connections>
             <point key="canvasLocation" x="164.8854961832061" y="40.845070422535215"/>
         </collectionViewCell>

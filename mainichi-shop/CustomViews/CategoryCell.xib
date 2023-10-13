@@ -3,7 +3,6 @@
     <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21679"/>
-        <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -21,20 +20,27 @@
                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="59w-DD-C2d">
                         <rect key="frame" x="0.0" y="0.0" width="89" height="61"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YwP-xU-Icb">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="El4-h0-tVL">
                                 <rect key="frame" x="0.0" y="0.0" width="89" height="61"/>
-                                <color key="backgroundColor" name="theme200"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2lw-JD-ub5">
+                                <rect key="frame" x="5" y="5" width="79" height="51"/>
+                                <color key="backgroundColor" red="0.87096112742653053" green="0.89183068029659307" blue="0.81627899083033628" alpha="0.39994448707217262" colorSpace="custom" customColorSpace="displayP3"/>
                                 <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="15"/>
-                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="YwP-xU-Icb" firstAttribute="leading" secondItem="59w-DD-C2d" secondAttribute="leading" id="CWg-sT-Uj3"/>
-                            <constraint firstAttribute="bottom" secondItem="YwP-xU-Icb" secondAttribute="bottom" id="acE-AJ-SqK"/>
-                            <constraint firstAttribute="trailing" secondItem="YwP-xU-Icb" secondAttribute="trailing" id="wDM-zq-fso"/>
-                            <constraint firstItem="YwP-xU-Icb" firstAttribute="top" secondItem="59w-DD-C2d" secondAttribute="top" id="wa8-Xs-eis"/>
+                            <constraint firstItem="2lw-JD-ub5" firstAttribute="top" secondItem="59w-DD-C2d" secondAttribute="top" constant="5" id="2Mq-Q4-ZkA"/>
+                            <constraint firstItem="2lw-JD-ub5" firstAttribute="leading" secondItem="59w-DD-C2d" secondAttribute="leading" constant="5" id="Dvp-fl-xdP"/>
+                            <constraint firstAttribute="trailing" secondItem="El4-h0-tVL" secondAttribute="trailing" id="GLx-KZ-dGy"/>
+                            <constraint firstAttribute="bottom" secondItem="2lw-JD-ub5" secondAttribute="bottom" constant="5" id="Kcl-Sz-mMh"/>
+                            <constraint firstItem="El4-h0-tVL" firstAttribute="top" secondItem="59w-DD-C2d" secondAttribute="top" id="Lyb-UU-eAc"/>
+                            <constraint firstAttribute="trailing" secondItem="2lw-JD-ub5" secondAttribute="trailing" constant="5" id="MaQ-7R-9PQ"/>
+                            <constraint firstAttribute="bottom" secondItem="El4-h0-tVL" secondAttribute="bottom" id="ZL8-HS-g7i"/>
+                            <constraint firstItem="El4-h0-tVL" firstAttribute="leading" secondItem="59w-DD-C2d" secondAttribute="leading" id="mFP-H2-GgK"/>
                         </constraints>
                     </view>
                 </subviews>
@@ -48,15 +54,13 @@
             </constraints>
             <size key="customSize" width="89" height="61"/>
             <connections>
-                <outlet property="nameLabel" destination="YwP-xU-Icb" id="Y5G-tG-eoZ"/>
+                <outlet property="categoryImageView" destination="El4-h0-tVL" id="dcF-Za-Jdc"/>
+                <outlet property="nameLabel" destination="2lw-JD-ub5" id="ORn-Yg-0xV"/>
             </connections>
             <point key="canvasLocation" x="2.2900763358778624" y="23.591549295774648"/>
         </collectionViewCell>
     </objects>
     <resources>
-        <namedColor name="theme200">
-            <color red="0.75300002098083496" green="0.88999998569488525" blue="0.96899998188018799" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-        </namedColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

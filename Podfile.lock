@@ -1,20 +1,40 @@
 PODS:
   - ActionKit (2.5.3)
+  - Alamofire (5.8.0)
   - IQKeyboardManagerSwift (6.5.13)
+  - KeychainSwift (20.0.0)
+  - Kingfisher (7.9.1)
+  - MBProgressHUD (1.2.0)
+  - SwiftyJSON (4.3.0)
 
 DEPENDENCIES:
   - ActionKit (~> 2.5.2)
+  - Alamofire
   - IQKeyboardManagerSwift
+  - KeychainSwift (~> 20.0)
+  - Kingfisher (~> 7.0)
+  - MBProgressHUD (~> 1.2.0)
+  - SwiftyJSON (~> 4.0)
 
 SPEC REPOS:
   trunk:
     - ActionKit
+    - Alamofire
     - IQKeyboardManagerSwift
+    - KeychainSwift
+    - Kingfisher
+    - MBProgressHUD
+    - SwiftyJSON
 
 SPEC CHECKSUMS:
   ActionKit: c1b6427fd36a0fe2223555679bcc5dea437af5b3
+  Alamofire: 0e92e751b3e9e66d7982db43919d01f313b8eb91
   IQKeyboardManagerSwift: 69b5fb9960edff37263d45c44fd97427e1f8c22b
+  KeychainSwift: 0ce6a4d13f7228054d1a71bb1b500448fb2ab837
+  Kingfisher: 1d14e9f59cbe19389f591c929000332bf70efd32
+  MBProgressHUD: 3ee5efcc380f6a79a7cc9b363dd669c5e1ae7406
+  SwiftyJSON: 6faa0040f8b59dead0ee07436cbf76b73c08fd08
 
-PODFILE CHECKSUM: fcd8f693d6b924be8ee5022232a4b9127e53e176
+PODFILE CHECKSUM: 03bb88b2240759ac9c2ae0b1a1f525f90469ca00
 
 COCOAPODS: 1.13.0

@@ -6,6 +6,9 @@
 //
 
 import UIKit
+import Alamofire
+import MBProgressHUD
+import SwiftyJSON
 
 class CategoryController: UIViewController {
     
@@ -19,6 +22,8 @@ class CategoryController: UIViewController {
         DisplayProduct(id: 1, name: "Adidas shoe", description: "Adidas shoe description", discountedPrice: 80.0, originalPrice: 100.0, addedCount: 0),
         DisplayProduct(id: 1, name: "Puma Jersey", description: "Puma shoe description", discountedPrice: 90.0, originalPrice: 100.0, addedCount: 0),
     ]
+    
+    var categoryCollection: [JSON] = []
     
 
     override func viewDidLoad() {
@@ -40,6 +45,8 @@ class CategoryController: UIViewController {
         
         let sectionHeaderNib = UINib(nibName: CellIdentifier.collectionSectionHeaderView, bundle: nil)
         self.mCollectionView.register(sectionHeaderNib, forSupplementaryViewOfKind: UICollectionView.elementKindSectionHeader, withReuseIdentifier: CellIdentifier.collectionSectionHeaderView)
+        
+        self.fetchProductCategories()
     }
 
 }
@@ -61,6 +68,7 @@ extension CategoryController: UICollectionViewDataSource{
         
         if section == 0 {
             let categoryHolderCell = collectionView.dequeueReusableCell(withReuseIdentifier: CellIdentifier.CategoryHolderCell, for: indexPath) as! CategoryHolderCell
+            categoryHolderCell.setCategoriesAndReload(cats: self.categoryCollection)
             return categoryHolderCell
         }else {
             let cell = collectionView.dequeueReusableCell(withReuseIdentifier: CellIdentifier.prouctCell, for: indexPath) as! ProductCell
@@ -115,5 +123,37 @@ extension CategoryController {
         let itemWidth = (screenWidth - totalSpacing) / 2
         
         return CGSize(width: itemWidth, height: 265.0)
+    }
+}
+
+extension CategoryController {
+    func fetchProductCategories () {
+        MBProgressHUD.showAdded(to: self.view, animated: true)
+        let url = RestClient.baseUrl + RestClient.categoryUrl
+        AF.request(url).responseData{ response in
+         debugPrint(response)
+            MBProgressHUD.hide(for: self.view, animated: true)
+            
+            switch (response.result){
+                case .success:
+                    print("Validation Successful")
+                if let responseData = response.value {
+                    do {
+                        let json = try JSON (data: responseData )
+                        print(json)
+                        if let array = json.array {
+                            self.categoryCollection = array
+                            self.mCollectionView.reloadData()
+                        }
+                    } catch let error {
+                        print(error)
+                    }
+                }
+                case let .failure(error):
+                    print(error)
+                
+            }
+        }
+
     }
 }
