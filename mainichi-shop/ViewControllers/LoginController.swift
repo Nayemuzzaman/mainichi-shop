@@ -8,6 +8,7 @@
 import UIKit
 import Alamofire
 import MBProgressHUD
+import KeychainSwift
 
 class LoginController: UIViewController {
     
@@ -16,6 +17,8 @@ class LoginController: UIViewController {
     @IBOutlet weak var usernameField: UITextField!
     @IBOutlet weak var passwordFeild: UITextField!
     @IBOutlet weak var loginButton: UIButton!
+    
+    let keychain = KeychainSwift()
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -26,6 +29,13 @@ class LoginController: UIViewController {
         self.passwordFeild.becomeFirstResponder()
         
         self.title = "Login"
+      
+        if let email = self.keychain.get("email"){
+            self.usernameField.text = email
+        }
+        if let password = self.keychain.get("password"){
+            self.passwordFeild.text = password
+        }
 
     }
     
@@ -68,6 +78,8 @@ class LoginController: UIViewController {
                 if let responseData = response.value {
                     if let accessToken = responseData.access_token {
                         self.writeToUserDefaults(key: "accessToken", value: accessToken)
+                        self.keychain.set(email, forKey: "email")
+                        self.keychain.set(password, forKey: "password")
                         self.navigate()
                     } else if let statusCode = responseData.statusCode, let message = responseData.message{
                         self.displayAlert(title: "Login Failed", message: message)
