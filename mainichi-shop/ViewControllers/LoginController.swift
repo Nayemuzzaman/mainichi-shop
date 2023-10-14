@@ -67,6 +67,7 @@ class LoginController: UIViewController {
                     print(response)
                 if let responseData = response.value {
                     if let accessToken = responseData.access_token {
+                        self.writeToUserDefaults(key: "accessToken", value: accessToken)
                         self.navigate()
                     } else if let statusCode = responseData.statusCode, let message = responseData.message{
                         self.displayAlert(title: "Login Failed", message: message)
