@@ -462,6 +462,47 @@
             </objects>
             <point key="canvasLocation" x="2785.4961832061067" y="3180.9859154929577"/>
         </scene>
+        <!--Create Product Controller-->
+        <scene sceneID="Zh9-M3-N8I">
+            <objects>
+                <viewController storyboardIdentifier="CreateProductController" id="U0O-Pg-bFt" customClass="CreateProductController" customModule="mainichi_shop" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="1zI-ld-cke">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="placeholder" translatesAutoresizingMaskIntoConstraints="NO" id="jpi-es-sDv">
+                                <rect key="frame" x="60" y="139" width="273" height="273"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="jpi-es-sDv" secondAttribute="height" multiplier="1:1" id="Axb-bT-kh9"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" showsTouchWhenHighlighted="YES" adjustsImageWhenHighlighted="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LkO-T3-TXR">
+                                <rect key="frame" x="60" y="139" width="273" height="273"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain"/>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="1Ju-sC-CzU"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="LkO-T3-TXR" firstAttribute="leading" secondItem="jpi-es-sDv" secondAttribute="leading" id="Uo1-Cz-kag"/>
+                            <constraint firstItem="LkO-T3-TXR" firstAttribute="bottom" secondItem="jpi-es-sDv" secondAttribute="bottom" id="dvr-IE-Wa6"/>
+                            <constraint firstItem="LkO-T3-TXR" firstAttribute="top" secondItem="jpi-es-sDv" secondAttribute="top" id="gZQ-e0-0nU"/>
+                            <constraint firstItem="1Ju-sC-CzU" firstAttribute="trailing" secondItem="jpi-es-sDv" secondAttribute="trailing" constant="60" id="sRr-Vo-ifa"/>
+                            <constraint firstItem="jpi-es-sDv" firstAttribute="leading" secondItem="1Ju-sC-CzU" secondAttribute="leading" constant="60" id="vqe-1V-l4t"/>
+                            <constraint firstItem="jpi-es-sDv" firstAttribute="top" secondItem="1Ju-sC-CzU" secondAttribute="top" constant="80" id="yQ7-T4-iLC"/>
+                            <constraint firstItem="LkO-T3-TXR" firstAttribute="trailing" secondItem="jpi-es-sDv" secondAttribute="trailing" id="zda-7S-rlw"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="pickImageButton" destination="LkO-T3-TXR" id="lvd-h3-BOL"/>
+                        <outlet property="productImageView" destination="jpi-es-sDv" id="umA-ij-UMF"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="49d-VD-MjJ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3527.480916030534" y="3180.9859154929577"/>
+        </scene>
         <!--Category Controller-->
         <scene sceneID="v1q-74-uja">
             <objects>
@@ -612,6 +653,7 @@
         <image name="gearshape.fill" catalog="system" width="128" height="123"/>
         <image name="magnifyingglass" catalog="system" width="128" height="117"/>
         <image name="orders" width="30" height="30"/>
+        <image name="placeholder" width="768" height="518"/>
         <namedColor name="theme200">
             <color red="0.75300002098083496" green="0.88999998569488525" blue="0.96899998188018799" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>

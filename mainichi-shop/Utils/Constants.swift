@@ -13,6 +13,7 @@ class Constants {
     public static let signupController = "SignupController"
     public static let tabController = "tabController"
     public static let profileController = "ProfileController"
+    public static let createProductController = "CreateProductController"
 }
 
 class CellIdentifier {
@@ -27,4 +28,5 @@ class RestClient {
     public static let categoryUrl = "/api/v1/categories"
     public static let loginURL = "/api/v1/auth/login"
     public static let profileUrl = "/api/v1/auth/profile"
+    public static let photoUploadUrl = "/api/v1/files/upload"
 }
