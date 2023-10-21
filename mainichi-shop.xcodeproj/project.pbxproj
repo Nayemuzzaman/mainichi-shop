@@ -43,6 +43,11 @@
 		2E6116D82AC1B42E0069A594 /* LoginController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E6116D62AC1B42E0069A594 /* LoginController.swift */; };
 		2E7D90A52AC7F76900B80B65 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E7D90A42AC7F76900B80B65 /* Constants.swift */; };
 		2E7D90AF2AC954E200B80B65 /* UIViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E7D90AE2AC954E200B80B65 /* UIViewExtension.swift */; };
+		2E82F09C2ADEC699007B380D /* AddressController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E82F09B2ADEC699007B380D /* AddressController.swift */; };
+		2E82F09E2ADECA7E007B380D /* AddAddressController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E82F09D2ADECA7E007B380D /* AddAddressController.swift */; };
+		2EF4BB072AE178C600C619C6 /* Address.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EF4BB062AE178C600C619C6 /* Address.swift */; };
+		2EF4BB0A2AE18CC900C619C6 /* AddressCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EF4BB082AE18CC900C619C6 /* AddressCell.swift */; };
+		2EF4BB0B2AE18CC900C619C6 /* AddressCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2EF4BB092AE18CC900C619C6 /* AddressCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -84,6 +89,11 @@
 		2E6116D62AC1B42E0069A594 /* LoginController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginController.swift; sourceTree = "<group>"; };
 		2E7D90A42AC7F76900B80B65 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		2E7D90AE2AC954E200B80B65 /* UIViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewExtension.swift; sourceTree = "<group>"; };
+		2E82F09B2ADEC699007B380D /* AddressController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddressController.swift; sourceTree = "<group>"; };
+		2E82F09D2ADECA7E007B380D /* AddAddressController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddAddressController.swift; sourceTree = "<group>"; };
+		2EF4BB062AE178C600C619C6 /* Address.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Address.swift; sourceTree = "<group>"; };
+		2EF4BB082AE18CC900C619C6 /* AddressCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddressCell.swift; sourceTree = "<group>"; };
+		2EF4BB092AE18CC900C619C6 /* AddressCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AddressCell.xib; sourceTree = "<group>"; };
 		685DD35AB3352A3940ED7FAC /* Pods_mainichi_shop.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_mainichi_shop.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D902813020CB60452EF1D568 /* Pods-mainichi-shop.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-mainichi-shop.release.xcconfig"; path = "Target Support Files/Pods-mainichi-shop/Pods-mainichi-shop.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -107,6 +117,7 @@
 				2E4324B52AD9980000843BC6 /* Requests */,
 				2E4324992AD3D20F00843BC6 /* Product.swift */,
 				2E4324A32AD5A3C800843BC6 /* DisplayProduct.swift */,
+				2EF4BB062AE178C600C619C6 /* Address.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -187,6 +198,8 @@
 				2E4324942ACAF6F100843BC6 /* ProductsController.swift */,
 				2E4324962ACC534900843BC6 /* ProfileController.swift */,
 				2E4324BD2ADA9F6B00843BC6 /* CreateProductController.swift */,
+				2E82F09B2ADEC699007B380D /* AddressController.swift */,
+				2E82F09D2ADECA7E007B380D /* AddAddressController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -221,6 +234,8 @@
 				2E4324AA2AD7AC6F00843BC6 /* CollectionSectionHeaderView.xib */,
 				2E4324AD2AD7C8BC00843BC6 /* CategoryCell.swift */,
 				2E4324AE2AD7C8BC00843BC6 /* CategoryCell.xib */,
+				2EF4BB082AE18CC900C619C6 /* AddressCell.swift */,
+				2EF4BB092AE18CC900C619C6 /* AddressCell.xib */,
 			);
 			path = CustomViews;
 			sourceTree = "<group>";
@@ -330,6 +345,7 @@
 				2E43249E2AD3DA3A00843BC6 /* SearchCell.xib in Resources */,
 				2E4324A22AD59CD700843BC6 /* ProductCell.xib in Resources */,
 				2E4324AC2AD7AC6F00843BC6 /* CollectionSectionHeaderView.xib in Resources */,
+				2EF4BB0B2AE18CC900C619C6 /* AddressCell.xib in Resources */,
 				2E4324A82AD64AB000843BC6 /* CategoryHolderCell.xib in Resources */,
 				2E6116CC2AC066900069A594 /* Assets.xcassets in Resources */,
 				2E6116CA2AC0668D0069A594 /* Main.storyboard in Resources */,
@@ -388,6 +404,7 @@
 			files = (
 				2E4324912ACAEDC100843BC6 /* OrdersController.swift in Sources */,
 				2E43249D2AD3DA3A00843BC6 /* SearchCell.swift in Sources */,
+				2E82F09E2ADECA7E007B380D /* AddAddressController.swift in Sources */,
 				2E4324C02ADAD40900843BC6 /* FileUploadResponse.swift in Sources */,
 				2E7D90AF2AC954E200B80B65 /* UIViewExtension.swift in Sources */,
 				2E4324AB2AD7AC6F00843BC6 /* CollectionSectionHeaderView.swift in Sources */,
@@ -406,9 +423,12 @@
 				2E4324BA2AD9989400843BC6 /* LoginResponse.swift in Sources */,
 				2E6116C32AC0668D0069A594 /* AppDelegate.swift in Sources */,
 				2E43248F2ACAED6900843BC6 /* SearchController.swift in Sources */,
+				2E82F09C2ADEC699007B380D /* AddressController.swift in Sources */,
 				2E6116C52AC0668D0069A594 /* SceneDelegate.swift in Sources */,
 				2E4324A12AD59CD700843BC6 /* ProductCell.swift in Sources */,
+				2EF4BB072AE178C600C619C6 /* Address.swift in Sources */,
 				2E4324A72AD64AB000843BC6 /* CategoryHolderCell.swift in Sources */,
+				2EF4BB0A2AE18CC900C619C6 /* AddressCell.swift in Sources */,
 				2E4324952ACAF6F200843BC6 /* ProductsController.swift in Sources */,
 				2E43249A2AD3D20F00843BC6 /* Product.swift in Sources */,
 				2E4324B42AD9905D00843BC6 /* UIViewControllerExtension.swift in Sources */,
@@ -562,6 +582,11 @@
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "mainichi-shop/Info.plist";
+				INFOPLIST_KEY_NSAppleMusicUsageDescription = "App wants to access Media Library to pick image for product ";
+				INFOPLIST_KEY_NSCameraUsageDescription = "App wants to access camera to capture image for product ";
+				INFOPLIST_KEY_NSLocationAlwaysUsageDescription = "App wants to location for user contact ";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "App wants to location for user contact ";
+				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "App wants to access photo Library to pick image for product ";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen.storyboard;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -590,6 +615,11 @@
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "mainichi-shop/Info.plist";
+				INFOPLIST_KEY_NSAppleMusicUsageDescription = "App wants to access Media Library to pick image for product ";
+				INFOPLIST_KEY_NSCameraUsageDescription = "App wants to access camera to capture image for product ";
+				INFOPLIST_KEY_NSLocationAlwaysUsageDescription = "App wants to location for user contact ";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "App wants to location for user contact ";
+				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "App wants to access photo Library to pick image for product ";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen.storyboard;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
