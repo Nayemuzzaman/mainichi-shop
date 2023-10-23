@@ -8,3 +8,4 @@ E-commerce application , developing with swift programming language
 <img width="345" alt="Screenshot 2023-10-23 at 11 43 54 AM" src="https://github.com/Nayemuzzaman/mainichi-shop/assets/12158468/d9946918-9ef5-481d-ab1b-cfc5ad385277">
 <img width="338" alt="Screenshot 2023-10-23 at 11 44 19 AM" src="https://github.com/Nayemuzzaman/mainichi-shop/assets/12158468/50864043-d9b7-4285-a235-27cc38a3fbe0">
 <img width="340" alt="Screenshot 2023-10-23 at 11 45 46 AM" src="https://github.com/Nayemuzzaman/mainichi-shop/assets/12158468/205dda1b-e181-42bd-b12e-c20b7b5baed6">
+<img width="329" alt="Screenshot 2023-10-23 at 11 50 22 AM" src="https://github.com/Nayemuzzaman/mainichi-shop/assets/12158468/ef71f6ca-62df-41e0-aa3a-8401ecf9f752">
