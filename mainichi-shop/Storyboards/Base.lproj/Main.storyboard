@@ -768,6 +768,119 @@
             </objects>
             <point key="canvasLocation" x="930.53435114503816" y="3180.9859154929577"/>
         </scene>
+        <!--Tutorial Controller-->
+        <scene sceneID="Kgj-4l-xqA">
+            <objects>
+                <viewController storyboardIdentifier="TutorialController" id="CuB-TQ-L46" customClass="TutorialController" customModule="mainichi_shop" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="zWE-OD-c0E">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="DcG-ut-RjK">
+                                <rect key="frame" x="0.0" y="59" width="393" height="694"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tae-XZ-FI0">
+                                <rect key="frame" x="303" y="763" width="70" height="40"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="JgG-I7-Hkh"/>
+                                    <constraint firstAttribute="width" constant="70" id="K1z-RE-BZ3"/>
+                                </constraints>
+                                <color key="tintColor" systemColor="systemGray3Color"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Skip">
+                                    <fontDescription key="titleFontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="16"/>
+                                </buttonConfiguration>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="l0Y-w8-gW8"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="l0Y-w8-gW8" firstAttribute="trailing" secondItem="tae-XZ-FI0" secondAttribute="trailing" constant="20" id="2Pr-z8-IZa"/>
+                            <constraint firstItem="tae-XZ-FI0" firstAttribute="top" secondItem="DcG-ut-RjK" secondAttribute="bottom" constant="10" id="6RC-fX-xfp"/>
+                            <constraint firstItem="l0Y-w8-gW8" firstAttribute="trailing" secondItem="DcG-ut-RjK" secondAttribute="trailing" id="TDp-jW-diM"/>
+                            <constraint firstItem="DcG-ut-RjK" firstAttribute="leading" secondItem="l0Y-w8-gW8" secondAttribute="leading" id="U8m-2Z-qRQ"/>
+                            <constraint firstItem="l0Y-w8-gW8" firstAttribute="bottom" secondItem="tae-XZ-FI0" secondAttribute="bottom" constant="15" id="gQa-ma-8gv"/>
+                            <constraint firstItem="DcG-ut-RjK" firstAttribute="top" secondItem="l0Y-w8-gW8" secondAttribute="top" id="x47-Is-mlc"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="containerView" destination="DcG-ut-RjK" id="5He-wv-FrR"/>
+                        <outlet property="skipButton" destination="tae-XZ-FI0" id="jVA-c3-ogq"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="PQd-Do-g6p" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="970" y="3903"/>
+        </scene>
+        <!--Tutorial Content Controller-->
+        <scene sceneID="3Y2-pI-9PT">
+            <objects>
+                <viewController storyboardIdentifier="TutorialContentController" id="aN3-e7-RzF" customClass="TutorialContentController" customModule="mainichi_shop" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="flF-ws-lhh">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="product" translatesAutoresizingMaskIntoConstraints="NO" id="v0O-B7-vlG">
+                                <rect key="frame" x="121.66666666666669" y="209" width="150" height="150"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="150" id="2v7-WF-PtP"/>
+                                    <constraint firstAttribute="height" constant="150" id="P2B-rp-M3Q"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Title Content" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="P5a-50-L2v">
+                                <rect key="frame" x="30" y="399" width="333" height="37"/>
+                                <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="27"/>
+                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Title Content" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Tx2-wg-SaC">
+                                <rect key="frame" x="30" y="451" width="333" height="27.333333333333314"/>
+                                <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="20"/>
+                                <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vdS-Fv-IAT">
+                                <rect key="frame" x="121.66666666666669" y="754" width="150" height="44"/>
+                                <color key="backgroundColor" red="0.1960784314" green="0.67843137249999996" blue="0.90196078430000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="150" id="Vm5-JK-VLf"/>
+                                    <constraint firstAttribute="height" constant="44" id="kD5-Lp-hv2"/>
+                                </constraints>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Get Started">
+                                    <fontDescription key="titleFontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="18"/>
+                                </buttonConfiguration>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="451-Gc-wBS"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="Tx2-wg-SaC" firstAttribute="leading" secondItem="flF-ws-lhh" secondAttribute="leading" constant="30" id="01e-o2-dkc"/>
+                            <constraint firstItem="P5a-50-L2v" firstAttribute="leading" secondItem="451-Gc-wBS" secondAttribute="leading" constant="30" id="2vl-zr-IKA"/>
+                            <constraint firstItem="v0O-B7-vlG" firstAttribute="top" secondItem="451-Gc-wBS" secondAttribute="top" constant="150" id="5Wo-2A-WrG"/>
+                            <constraint firstItem="v0O-B7-vlG" firstAttribute="centerX" secondItem="flF-ws-lhh" secondAttribute="centerX" id="HRU-np-EkA"/>
+                            <constraint firstItem="P5a-50-L2v" firstAttribute="top" secondItem="v0O-B7-vlG" secondAttribute="bottom" constant="40" id="L3Q-2l-BJy"/>
+                            <constraint firstItem="451-Gc-wBS" firstAttribute="trailing" secondItem="P5a-50-L2v" secondAttribute="trailing" constant="30" id="XS5-17-LjW"/>
+                            <constraint firstItem="Tx2-wg-SaC" firstAttribute="top" secondItem="P5a-50-L2v" secondAttribute="bottom" constant="15" id="Xq2-jg-M8J"/>
+                            <constraint firstItem="vdS-Fv-IAT" firstAttribute="centerX" secondItem="flF-ws-lhh" secondAttribute="centerX" id="YzZ-Vi-qPM"/>
+                            <constraint firstItem="451-Gc-wBS" firstAttribute="bottom" secondItem="vdS-Fv-IAT" secondAttribute="bottom" constant="20" id="eDe-MW-iWf"/>
+                            <constraint firstAttribute="trailing" secondItem="Tx2-wg-SaC" secondAttribute="trailing" constant="30" id="sJv-MB-KDW"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="descriptionLabel" destination="Tx2-wg-SaC" id="fyA-Bg-v52"/>
+                        <outlet property="getStartedButton" destination="vdS-Fv-IAT" id="dAi-9m-aVV"/>
+                        <outlet property="slideImageView" destination="v0O-B7-vlG" id="vIs-67-tN9"/>
+                        <outlet property="titleLabel" destination="P5a-50-L2v" id="GeM-sI-TeA"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="DNO-4Y-J7O" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1922.9007633587785" y="3902.816901408451"/>
+        </scene>
     </scenes>
     <resources>
         <image name="appLogo" width="40" height="40"/>
@@ -777,6 +890,7 @@
         <image name="magnifyingglass" catalog="system" width="128" height="117"/>
         <image name="orders" width="30" height="30"/>
         <image name="placeholder" width="768" height="518"/>
+        <image name="product" width="100" height="100"/>
         <namedColor name="theme200">
             <color red="0.75300002098083496" green="0.88999998569488525" blue="0.96899998188018799" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
@@ -794,6 +908,9 @@
         </systemColor>
         <systemColor name="systemGray2Color">
             <color red="0.68235294117647061" green="0.68235294117647061" blue="0.69803921568627447" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemGray3Color">
+            <color red="0.7803921568627451" green="0.7803921568627451" blue="0.80000000000000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>
